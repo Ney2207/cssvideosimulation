@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ney Cordovez" />
     <meta id="image" name="keyword" content="https://drive.google.com/uc?export=view&id=15srCBubLxwuTIRmmQrllvRi7-moHD8Ok" />
-    <title>Simulation v1.1</title>
-    <link rel="stylesheet" href="https://ney2207.github.io/cssvideosimulation/main_style.css" />
-    <script src="https://ney2207.github.io/cssvideosimulation/base_script.js" defer></script>
+    <title>Simulation 1.1</title>
 </head>
 <body>
     <header>
@@ -17,17 +15,20 @@
             <button id="menuBtn">Menu</button>
             <div id="menu" class="hideMenu">
                 <ul class="menu-item">
-                    <li><b>HTML: </b><a href="simulation1.1.txt" download>Download</a></li>
-                    <li><b>CSS: </b><a href="main_style.css" download>Download</a></li>
-                    <li><b>JS: </b><a href="base_script.js" download>Download</a></li>
+                    <li><b>HTML: </b><a href="https://ney2207.github.io/cssvideosimulation/index.html" download>Download</a></li>
+                    <li><b>CSS: </b><a href="https://ney2207.github.io/cssvideosimulation/main_style.css" download>Download</a></li>
+                    <li><b>JS: </b><a href="https://ney2207.github.io/cssvideosimulation/base_script.js" download>Download</a></li>
                 </ul>
                 <button id="themeBtn" class="">Change Theme</button>
             </div>
+            <audio id="music" src="https://drive.google.com/uc?id=17UpPY4B8xYyOnF-79M3VH1a9iuoNy1HW" preload="auto">Not Supported.</audio>
         </div>
     </header>
-    <div class="preloader"></div>
     <div id="imgContainer">
-        <img id="image" class="l1" src="cell.gif" alt="#" />
+        <div class="preloader1">
+            <div class="preloader2"></div>
+        </div>
+        <img id="mainImg" class="l1" src="cell.gif" alt="#" />
         <img id="" class="l2" src="cell.gif" alt="#" />
         <img id="" class="l2" src="cell.gif" alt="#" />
         <img id="" class="l2" src="cell.gif" alt="#" />
@@ -54,7 +55,7 @@
         <img id="" class="l5" src="cell.gif" alt="#" />
     </div>
     <div id="progressBar">
-        <div id="progress"></div>
+        <div id="progressBase"></div>
     </div>
     <button id="start">Start!</button>
 </body>
